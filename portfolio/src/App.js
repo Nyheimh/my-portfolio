@@ -4,6 +4,8 @@ import { Route } from 'react-router-dom'
 // import Navbar from "./components/Navbar"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Resume from "./components/Resume"
+import Portfolio from "./components/Portfolio"
+
 // import {
 //   AppBar,
 //   Toolbar,
@@ -31,7 +33,9 @@ function App() {
         <CssBaseline />
         <Route exact path="/" component={Home} />
         <Route path="/resume" component={Resume} />
-        <Home/>
+        <Route path="/portfolio" component={Portfolio} />
+
+        {/* <Home/> */}
       </>
     </div>
   );
