@@ -2,6 +2,7 @@
 // // import { ArrowBack } from '@material-ui/icons'
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Footer from "./Footer"
 import MobileRightMenu from "@material-ui/core/Drawer"
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -9,7 +10,6 @@ import {
   Toolbar,
   ListItem,
   IconButton,
-  ListIcon,
   ListItemText,
   Divider,
   List,
@@ -24,7 +24,7 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
-import { green } from "@material-ui/core/colors";
+// import { green } from "@material-ui/core/colors";
 
 // CSS Styles
 const useStyles = makeStyles({
@@ -108,7 +108,7 @@ export default function Navbar() {
           <MobileRightMenu anchor="right" open={state.right}
           onClose={toggleSlider("right", false)}>
             {sideList("right")}
-      
+              <Footer />
             </MobileRightMenu>
           </Toolbar>
         </AppBar>
