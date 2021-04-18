@@ -2,7 +2,9 @@ import React from 'react'
 import { makeStyles } from "@material-ui/core/styles"
 import {Typography, Box} from "@material-ui/core"
 import Navbar from "./Navbar";
-import { Autorenew, CenterFocusStrong } from '@material-ui/icons';
+// import { CenterFocusStrong } from '@material-ui/icons';
+// import { Autorenew } from '@material-ui/icons';
+
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {

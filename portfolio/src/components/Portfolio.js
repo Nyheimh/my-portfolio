@@ -56,7 +56,7 @@ function Portfolio() {
                 <Typography gutterBottom variant="body2">
                   Project 1
                 </Typography>
-                <Typography gutterBottom variant="textSecondary" component="p">
+                <Typography gutterBottom variant="body2" component="p">
                   Lorem ipsum for P1
                 </Typography>
               </CardContent>
@@ -90,7 +90,7 @@ function Portfolio() {
                 <Typography gutterBottom variant="body2">
                   Project 1
                 </Typography>
-                <Typography gutterBottom variant="textSecondary" component="p">
+                <Typography gutterBottom variant="body2" component="p">
                   Lorem ipsum for P1
                 </Typography>
               </CardContent>
@@ -123,7 +123,7 @@ function Portfolio() {
                 <Typography gutterBottom variant="body2">
                   Project 1
                 </Typography>
-                <Typography gutterBottom variant="textSecondary" component="p">
+                <Typography gutterBottom variant="body2" component="p">
                   Lorem ipsum for P1
                 </Typography>
               </CardContent>
@@ -156,7 +156,7 @@ function Portfolio() {
                 <Typography gutterBottom variant="body2">
                   Project 1
                 </Typography>
-                <Typography gutterBottom variant="textSecondary" component="p">
+                <Typography gutterBottom variant="body2" component="p">
                   Lorem ipsum for P1
                 </Typography>
               </CardContent>

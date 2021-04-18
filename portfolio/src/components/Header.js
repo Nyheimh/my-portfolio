@@ -1,6 +1,7 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
-import { Typography, Avatar, Grid, Box } from "@material-ui/core"
+import { Typography, Grid, Box } from "@material-ui/core"
+// import {Avatar } from "@material-ui/core"
 import Typed from "react-typed"
 // import classes from '.module.css'
 // import avatar from "../avatar.png"
