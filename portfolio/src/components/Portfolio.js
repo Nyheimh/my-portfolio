@@ -17,23 +17,19 @@ import project2 from "../images/google.jpeg";
 import project3 from "../images/google.jpeg";
 import project4 from "../images/google.jpeg";
 
-
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
+    // background: "#03045e",
     height: "100%",
   },
   cardContainer: {
     maxWidth: 345,
-    // margin: "3rem",
-    margin: "5rem auto"
-  }
-})
-
+    margin: "5rem auto",
+  },
+});
 
 function Portfolio() {
-
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Box component="div" className={classes.mainContainer}>
@@ -61,26 +57,25 @@ function Portfolio() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
+            <CardActions>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+              <Button size="small" color="primary">
+                Github
+              </Button>
+            </CardActions>
           </Card>
-          </Grid>
+        </Grid>
 
-          {/* Project 2 */}
-          <Grid item xs={12} sm={8} md={6}>
-
+        {/* Project 2 */}
+        <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project Name"
-                height="140"
+                height="160"
                 image={project2}
               />
               <CardContent>
@@ -95,16 +90,16 @@ function Portfolio() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
+            <CardActions>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+              <Button size="small" color="primary">
+                Github
+              </Button>
+            </CardActions>
           </Card>
-          </Grid>
+        </Grid>
 
         {/* Project 3 */}
         <Grid item xs={12} sm={8} md={6}>
@@ -113,7 +108,7 @@ function Portfolio() {
               <CardMedia
                 component="img"
                 alt="Project Name"
-                height="140"
+                height="160"
                 image={project3}
               />
               <CardContent>
@@ -128,25 +123,25 @@ function Portfolio() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
+            <CardActions>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+              <Button size="small" color="primary">
+                Github
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
 
-{/* Project 4 */}
+        {/* Project 4 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project Name"
-                height="140"
+                height="160"
                 image={project4}
               />
               <CardContent>
@@ -161,18 +156,16 @@ function Portfolio() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
+            <CardActions>
+              <Button size="small" color="primary">
+                Live Demo
+              </Button>
+              <Button size="small" color="primary">
+                Github
+              </Button>
+            </CardActions>
           </Card>
         </Grid>
-
-
       </Grid>
     </Box>
   );

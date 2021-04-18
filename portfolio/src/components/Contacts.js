@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop: "1rem",
-    color: "tomato",
-    borderColor: "tomato"
+    color: "white",
+    borderColor: "#001d3d"
   
   }
 }));
@@ -22,17 +22,17 @@ const useStyles = makeStyles((theme) => ({
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
-      color: "tomato",
+      color: "#ffff",
     },
     "& label": {
-      color: "tan",
+      color: "#ffffff",
     },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: "tan",
+        borderColor: "##001d3d",
       },
       "&:hover fieldset": {
-        borderColor: "tan",
+        borderColor: "#03045e",
       },
       "& .Mui-focused fieldset": {
         borderColor: "tan",
@@ -45,11 +45,11 @@ function Contacts() {
   const classes = useStyles();
 
   return (
-    <Box component="div" style={{ background: "#233", height: "100vh"}}>
+    <Box component="div" style={{  height: "100vh" }}>
       <Navbar />
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
-          <Typography variant="h5" style={{color: "tomato", textAlign: "center", textTransform: "uppercase"}}>HIRE ME</Typography>
+          <Typography variant="h5" style={{color: "white", textAlign: "center"}}>Contact Me</Typography>
           <InputField
             fullWidth={true}
             label="Name"
@@ -78,7 +78,7 @@ function Contacts() {
           />
           <br />
         <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
-          Contact Me
+          Direct Contact
         </Button>
         </Box>
       </Grid>
