@@ -12,7 +12,7 @@ export default function Resume() {
   return (
     <div>
       <Navbar />
-      <img className="resume" src={project1} alt="display image" />
+      <img className="resume" src={project1} alt="display image"/>
     </div>
   )
     }
