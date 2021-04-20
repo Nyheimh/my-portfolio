@@ -14,9 +14,8 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: "1rem",
     color: "white",
-    borderColor: "#001d3d"
-  
-  }
+    borderColor: "#001d3d",
+  },
 }));
 
 const InputField = withStyles({
@@ -45,11 +44,16 @@ function Contacts() {
   const classes = useStyles();
 
   return (
-    <Box component="div" style={{  height: "100vh" }}>
+    <Box component="div" style={{ height: "100vh" }}>
       <Navbar />
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
-          <Typography variant="h5" style={{color: "white", textAlign: "center"}}>Contact Me</Typography>
+          <Typography
+            variant="h5"
+            style={{ color: "white", textAlign: "center" }}
+          >
+            Contact Me
+          </Typography>
           <InputField
             fullWidth={true}
             label="Name"
@@ -77,9 +81,15 @@ function Contacts() {
             size="medium"
           />
           <br />
-        <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />}>
-          Direct Contact
-        </Button>
+          <Button
+            className={classes.button}
+            href="mailto:NyheimHunter@gmail.com?subject=Would love to connect with you!"
+            variant="outlined"
+            fullWidth={true}
+            endIcon={<SendIcon />}
+          >
+            Direct Contact
+          </Button>
         </Box>
       </Grid>
     </Box>

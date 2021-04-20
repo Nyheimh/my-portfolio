@@ -12,10 +12,10 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import project1 from "../images/google.jpeg";
+import project1 from "../images/imamiru.jpeg";
 import project2 from "../images/google.jpeg";
-import project3 from "../images/google.jpeg";
-import project4 from "../images/google.jpeg";
+import project3 from "../images/plantllenial.jpeg";
+// import project4 from "../images/google.jpeg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -41,27 +41,27 @@ function Portfolio() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project Name"
-                height="160"
+                alt="Ima Miru"
+                height="180"
                 image={project1}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
+                  Ima Miru
                 </Typography>
                 <Typography gutterBottom variant="body2">
-                  Project 1
+                Tech Stack: MERN (MongoDB, ExpressJs, ReactJs, NodeJs), Rest APIs, Bootstrap
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Lorem ipsum for P1
+                  Ima Miru (Watch Now in Japanese) is a Full stack application. This application utilizes full CRUD funcitonality, REST APIs, Bootstrap, and ReactJs.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://ima-miru.netlify.app/" target="_blank">
                 Live Demo
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://github.com/Nyheimh/ima-miru" target="_blank">
                 Github
               </Button>
             </CardActions>
@@ -74,68 +74,68 @@ function Portfolio() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project Name"
-                height="160"
+                alt="Google Clone"
+                height="200"
                 image={project2}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
+                  Google Clone
                 </Typography>
                 <Typography gutterBottom variant="body2">
-                  Project 1
+                  Tech Stack: ReactJs, JavaScript, Bootstrap, Firebase, Third Party API
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Lorem ipsum for P1
+                  Developed a Google Clone of their search engine that allows for a user to search the internet while utilizing Google's API. 
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://clone-ab656.web.app/" target="_blank">
                 Live Demo
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://github.com/Nyheimh/Noogle---Google-Clone" target="_blank">
                 Github
               </Button>
             </CardActions>
           </Card>
         </Grid>
-
+        
         {/* Project 3 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project Name"
-                height="160"
+                alt="Plantllenial"
+                height="180"
                 image={project3}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
+                  Plantllenial
                 </Typography>
                 <Typography gutterBottom variant="body2">
-                  Project 1
+                Tech Stack: React, JavaScript, MaterialUi, and APIs 
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Lorem ipsum for P1
+                Plantllenial is a desktop application that serves a blog for millennials with a passion for plants. This frontend website is built with React, React Router, Axios, CSS, MaterialUI, and third party API.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://plantllenial.netlify.app/" target="_blank">
                 Live Demo
               </Button>
-              <Button size="small" color="primary">
+              <Button size="small" color="primary" href="https://github.com/Nyheimh/Plantllenial" target="_blank">
                 Github
               </Button>
             </CardActions>
           </Card>
         </Grid>
-
+        
         {/* Project 4 */}
-        <Grid item xs={12} sm={8} md={6}>
+        {/* <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
@@ -165,7 +165,7 @@ function Portfolio() {
               </Button>
             </CardActions>
           </Card>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

@@ -1,5 +1,5 @@
 // // import { Avatar, Box, IconButton, Typography } from '@material-ui/core'
-// // import { ArrowBack } from '@material-ui/icons'
+import DehazeIcon from '@material-ui/icons/Dehaze';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
@@ -18,7 +18,6 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import {
-  ArrowBack,
   AssignmentInd,
   Home,
   Apps,
@@ -59,6 +58,11 @@ const menuItems = [
     listText: "Contacts",
     listPath: "/contacts",
   },
+  // {
+  //   listIcon: <About />,
+  //   listText: "About Me",
+  //   listPath: "/about",
+  // },
 ];
 
 export default function Navbar() {
@@ -99,7 +103,7 @@ export default function Navbar() {
       <AppBar position="static" style={{ background: "#001d3d" }}>
         <Toolbar>
           <IconButton onClick={toggleSlider("right", true)}>
-            <ArrowBack style={{ color: "#fff" }} />
+            <DehazeIcon style={{ color: "#fff" }} />
           </IconButton>
           <Typography variant="h5" style={{ color: "#fff" }}>
             Portfolio
