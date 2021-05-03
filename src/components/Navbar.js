@@ -2,6 +2,7 @@
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import About from "./About/About"
 import Footer from "./Footer";
 import MobileRightMenu from "@material-ui/core/Drawer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -22,7 +23,9 @@ import {
   Home,
   Apps,
   ContactMail,
+  // AccountCircleIcon
 } from "@material-ui/icons";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 // import { green } from "@material-ui/core/colors";
 
 // CSS Styles
@@ -58,11 +61,11 @@ const menuItems = [
     listText: "Contacts",
     listPath: "/contacts",
   },
-  // {
-  //   listIcon: <About />,
-  //   listText: "About Me",
-  //   listPath: "/about",
-  // },
+  {
+    listIcon: <AccountCircleIcon />,
+    listText: "About Me",
+    listPath: "/about",
+  },
 ];
 
 export default function Navbar() {

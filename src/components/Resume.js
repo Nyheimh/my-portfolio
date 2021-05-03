@@ -4,8 +4,6 @@ import React from 'react'
 import Navbar from "./Navbar";
 import project1 from "../images/resumes.png";
 
-// import { CenterFocusStrong } from '@material-ui/icons';
-// import { Autorenew } from '@material-ui/icons';
 
 
 export default function Resume() {

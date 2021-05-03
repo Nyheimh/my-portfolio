@@ -12,7 +12,8 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import project1 from "../images/imamiru.jpeg";
+import hyke from "../images/hyke.png"
+import imamiru from "../images/imamiru.jpeg";
 import project2 from "../images/google.jpeg";
 import project3 from "../images/plantllenial.jpeg";
 // import project4 from "../images/google.jpeg";
@@ -36,6 +37,41 @@ function Portfolio() {
       <Navbar />
       <Grid container justify="center">
         {/* Project 1 */}
+
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Hyke"
+                height="180"
+                image={hyke}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Hyke
+                </Typography>
+                <Typography gutterBottom variant="body2">
+                Tech Stack: Ruby on Rails, Rest APIs, MaterialUi, ReactJs
+                </Typography>
+                <Typography gutterBottom variant="body2" component="p">
+                  Hyke is a Full stack application designed for those who would like to hike. This application utilizes full CRUD funcitonality, REST APIs, MaterialUi, and ReactJs.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary"
+                href="https://hyke.netlify.app/" target="_blank">
+                Live Demo
+              </Button>
+              <Button size="small" color="primary" href="https://github.com/Nyheimh/Hyke" target="_blank">
+                Github
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
@@ -43,7 +79,7 @@ function Portfolio() {
                 component="img"
                 alt="Ima Miru"
                 height="180"
-                image={project1}
+                image={imamiru}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
@@ -53,7 +89,7 @@ function Portfolio() {
                 Tech Stack: MERN (MongoDB, ExpressJs, ReactJs, NodeJs), Rest APIs, Bootstrap
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Ima Miru (Watch Now in Japanese) is a Full stack application. This application utilizes full CRUD funcitonality, REST APIs, Bootstrap, and ReactJs.
+                  Ima Miru (Watch Now in Japanese) is a Full stack application for those with a passion for Anime. This application utilizes full CRUD funcitonality, REST APIs, Bootstrap, and ReactJs.
                 </Typography>
               </CardContent>
             </CardActionArea>
