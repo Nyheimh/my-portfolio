@@ -10,7 +10,7 @@ export default function Resume() {
   return (
     <div>
       <Navbar />
-      <Link href={pdf} target="_blank" rel="noreferrer" alt="resume">Resume</Link>
+      <Link href={pdf} target="_blank" rel="noreferrer" alt="resume">Resume!</Link>
     </div>
   )
     }
