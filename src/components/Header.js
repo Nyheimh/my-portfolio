@@ -1,10 +1,11 @@
 import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 import { Typography, Grid, Box } from "@material-ui/core"
-// import {Avatar } from "@material-ui/core"
+// import { Avatar } from "@material-ui/core"
 import Typed from "react-typed"
 // import classes from '.module.css'
-// import avatar from "../avatar.png"
+import avatar from "../images/avatar.jpg"
+import './Header.css'
 
 const useStyles = makeStyles(theme => ({
   // avatar: {
@@ -35,18 +36,21 @@ function Header() {
   const classes = useStyles()
 
   return (
+    <div className="header">
+
     <Box className={classes.typedContainer}>
-      <Grid container justify="center">
-      {/* <Avatar className={classes.avatar} src={avatar} alt="Nyheim Hunter"/>  */}
-      </Grid>
       <Typography className={classes.name}  variant="h3">
         <Typed strings={["Nyheim Hunter"]} typeSpeed={40} />
       </Typography>
       <Typography className={classes.title} variant="h4">
         <Typed
-          strings={["Junior Software Engineer", "Full-Stack Developer", "Web Developer"]} typeSpeed={20} backspeed={10} loop />
+          strings={["Software Engineer", "Full-Stack Developer", "Web Developer"]} typeSpeed={20} backspeed={10} loop />
       </Typography>
+      <Grid container justify="center">
+      <img className= "avatar" src={avatar} alt="Nyheim Hunter"/> 
+      </Grid>
     </Box>
+          </div>
   )
 }
 
