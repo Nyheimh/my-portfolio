@@ -51,9 +51,9 @@ function Portfolio() {
                   ReactJs
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Hyke is a Full stack application designed for those who would
+                  Hyke is a Full stack application designed for those who
                   like to hike. This application utilizes full CRUD
-                  funcitonality, REST APIs, MaterialUi, and ReactJs.
+                  functionality, REST APIs, MaterialUi, and ReactJs.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -96,9 +96,7 @@ function Portfolio() {
                   APIs, Bootstrap
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Ima Miru (Watch Now in Japanese) is a Full stack application
-                  for those with a passion for Anime. This application utilizes
-                  full CRUD funcitonality, REST APIs, Bootstrap, and ReactJs.
+                Ima Miru (Watch Now in Japanese) is a Full-stack application for those with a passion for Anime. This application utilizes full CRUD functionality, REST APIs, Bootstrap, and ReactJs.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -187,10 +185,7 @@ function Portfolio() {
                   Tech Stack: React, JavaScript, MaterialUi, and APIs
                 </Typography>
                 <Typography gutterBottom variant="body2" component="p">
-                  Plantllenial is a desktop application that serves a blog for
-                  millennials with a passion for plants. This frontend website
-                  is built with React, React Router, Axios, CSS, MaterialUI, and
-                  third party API.
+                Plantllenial is a desktop application that serves as a blog for millennials with a passion for plants. This frontend website is built with React, React Router, Axios, CSS, MaterialUI, and third-party API.
                 </Typography>
               </CardContent>
             </CardActionArea>
