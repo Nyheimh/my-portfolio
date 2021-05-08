@@ -15,6 +15,8 @@ const useStyles = makeStyles(theme => ({
   // },
   name: {
     color: "#ffff",
+    marginTop: "revert",
+    // marginBottom: "auto"
   },
   title: {
     color: "#001d3d",

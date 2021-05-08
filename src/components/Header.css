@@ -2,10 +2,13 @@
   height: 250px
 }
 
-
-@media (min-width: 1000px){
-  .makeStyles-typedContainer-8 {
+.header > span {
+  margin-top: 50px;
+}
+/* @media (min-width: 1000px){ */
+  .makeStyles-typedContainer-8,
+  .makeStyles-name-6 {
     margin-top: 50px;
   }
   
-}
+/* } */
