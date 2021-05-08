@@ -2,6 +2,7 @@
 import DehazeIcon from '@material-ui/icons/Dehaze';
 import { useState } from "react";
 import { Link } from "react-router-dom";
+// import  format  from "../images/NyheimHunterResume.jpg";
 // import About from "./About/About"
 import Footer from "./Footer";
 import MobileRightMenu from "@material-ui/core/Drawer";

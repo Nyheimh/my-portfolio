@@ -6,8 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  /* width: 600px; */
-  /* height: 776px; */
+  width: 600px;
+  height: 776px;
   object-fit: cover;
   object-position: 50% 50%;
 }
