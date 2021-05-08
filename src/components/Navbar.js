@@ -32,7 +32,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 // CSS Styles
 const useStyles = makeStyles({
   menuContainer: {
-    width: 250,
+    width: 400,
     background: "#001d3d",
     height: "100%",
   },
