@@ -4,7 +4,7 @@ import { Typography, Grid, Box } from "@material-ui/core"
 // import { Avatar } from "@material-ui/core"
 import Typed from "react-typed"
 // import classes from '.module.css'
-import avatar from "../images/avatar.jpg"
+// import avatar from "../images/avatar.jpg"
 import './Header.css'
 
 const useStyles = makeStyles(theme => ({
@@ -49,7 +49,7 @@ function Header() {
           strings={["Software Engineer", "Full-Stack Developer", "Web Developer"]} typeSpeed={20} backspeed={10} loop />
       </Typography>
       <Grid container justify="center">
-      <img className= "avatar" src={avatar} alt="Nyheim Hunter"/> 
+      {/* <img className= "avatar" src={avatar} alt="Nyheim Hunter"/>  */}
       </Grid>
     </Box>
           </div>
