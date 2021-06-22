@@ -15,7 +15,7 @@ import {
 import hyke from "../images/hyke.png";
 import imamiru from "../images/imamiru.jpeg";
 import project2 from "../images/google.jpeg";
-import project3 from "../images/plantllenial.jpeg";
+import project3 from "../images/plantlennial.png";
 // import project4 from "../images/google.jpeg";
 
 const useStyles = makeStyles({
