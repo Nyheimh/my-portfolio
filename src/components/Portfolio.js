@@ -77,6 +77,49 @@ function Portfolio() {
             </CardActions>
           </Card>
         </Grid>
+        
+        {/* Project 3 */}
+        <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Plantlennial"
+                height="180"
+                image={project3}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Plantllenial
+                </Typography>
+                <Typography gutterBottom variant="body2">
+                  Tech Stack: React, JavaScript, MaterialUi, and APIs
+                </Typography>
+                <Typography gutterBottom variant="body2" component="p">
+                Plantllenial is a desktop application that serves as a blog for millennials with a passion for plants. This frontend website is built with React, React Router, Axios, CSS, MaterialUI, and third-party API.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                size="small"
+                color="primary"
+                href="https://plantlennial.netlify.app"
+                target="_blank"
+              >
+                Live Demo
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/Nyheimh/Plantlennial"
+                target="_blank"
+              >
+                Github
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
 
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
@@ -167,48 +210,6 @@ function Portfolio() {
           </Card>
         </Grid>
 
-        {/* Project 3 */}
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Plantllenial"
-                height="180"
-                image={project3}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Plantllenial
-                </Typography>
-                <Typography gutterBottom variant="body2">
-                  Tech Stack: React, JavaScript, MaterialUi, and APIs
-                </Typography>
-                <Typography gutterBottom variant="body2" component="p">
-                Plantllenial is a desktop application that serves as a blog for millennials with a passion for plants. This frontend website is built with React, React Router, Axios, CSS, MaterialUI, and third-party API.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                href="https://plantllenial.netlify.app/"
-                target="_blank"
-              >
-                Live Demo
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://github.com/Nyheimh/Plantllenial"
-                target="_blank"
-              >
-                Github
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
 
         {/* Project 4 */}
         {/* <Grid item xs={12} sm={8} md={6}>
