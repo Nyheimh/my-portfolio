@@ -1,6 +1,6 @@
 import "./App.css";
 import AboutMe from "./sections/AboutMe/AboutMe";
-import ContactMe from "./sections/ContactMe/ContactMe";
+// import ContactMe from "./sections/ContactMe/ContactMe";
 // import Footer from "./sections/Footer/Footer";
 import HeroSection from "./sections/HeroSection/HeroSection";
 import Navbar from "./sections/Navbar/Navbar";
@@ -30,7 +30,7 @@ function App() {
       <AboutMe windowDimension={windowDimension} />
       <Projects windowDimension={windowDimension} />
       {/* <ContactMe windowDimension={windowDimension}/> */}
-      {/* <Footer /> */}
+      {/* <Footer />. */}
     </div>
   );
 }
