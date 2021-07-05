@@ -36,7 +36,7 @@ export default function AboutMe({ windowDimension }) {
             </div>
           </div>
           <img
-            src="/assets/heim.jpg"
+            src="../../assets/heim.jpg"
             alt="Nyheim Hunter"
             className="profile-pic"
           />
@@ -49,7 +49,7 @@ export default function AboutMe({ windowDimension }) {
           <div className="mobile-tablet-nested">
             <div className="about-details">
               <button onClick={downloadFile} className="resume-button">
-                download resume
+                Download Resume
               </button>
               <h4 className="tech-stack">Tech Stack:</h4>
               <p className="tech-stack">
