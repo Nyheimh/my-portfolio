@@ -16,11 +16,14 @@
 
 .about-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .tech-stack {
-  margin: 10px 0px 0px 0px;
+  /* display: flex; */
+
+  /* margin: 10px 0px 0px 0px; */
+  width: 100px;
 }
 
 /* =================== DESKTOP ABOUT STYLES =================================== */
@@ -28,6 +31,7 @@
 .about-container-desktop {
   display: flex;
   align-items: flex-start;
+  
 }
 
 .desktop-nested {

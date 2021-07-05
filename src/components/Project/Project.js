@@ -1,4 +1,5 @@
 import "./Project.css";
+import "../../App.css"
 
 export default function Project(props) {
   const {

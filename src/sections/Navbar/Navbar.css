@@ -5,7 +5,9 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, .85);
+  background: linear-gradient(117.82deg, rgba(235, 235, 235, 0) 1.58%, rgba(95, 95, 95, 0.4) 81.08%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
   display: flex;
   align-items: center;
   padding: 0px 20px;
@@ -15,7 +17,6 @@ nav {
 /* ================= DESKTOP NAV STYLES ====================================== */
 
 .nav-header {
-  font-size: 5vw;
   flex-grow: 1;
 }
 
@@ -30,7 +31,6 @@ nav {
 
 @media (min-width: 641px) {
   .nav-link {
-    font-family: 'Sanchez', serif;
     color: var(--portfolio-gray);
     font-size: 2.5vw;
     transition-property: transform;
@@ -67,10 +67,6 @@ nav {
   .nav-header {
     font-size: 2em;
     flex-grow: 0;
-  }
-  
-  .nav-link {
-    font-family: 'Sanchez', serif;
   }
 
 
