@@ -14,9 +14,9 @@ export const sectionLinks = [
     href: "#projects",
     class: "projects-link"
   },
-  {
-    name: "Contact",
-    href: "#contact-me",
-    class: "contact-link"
-  }
+  // {
+  //   name: "Contact",
+  //   href: "#contact-me",
+  //   class: "contact-link"
+  // }
 ]
