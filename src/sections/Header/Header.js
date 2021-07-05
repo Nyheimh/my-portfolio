@@ -19,7 +19,7 @@ export default function Header({ windowDimension }) {
         />
       )}
         <h1 className="header-text">
-          Hi, I'm Molly, and I'm a full stack developer.
+          Welcome to my portfolio.
         </h1>
     </header>
   )
