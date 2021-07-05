@@ -1,25 +1,37 @@
 import './App.css';
-import Home from "./components/index"
-import { Route } from 'react-router-dom'
-// import Navbar from "./components/Navbar"
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Resume from "./components/Resume"
-import Portfolio from "./components/Portfolio"
-import Contacts from "./components/Contacts"
-import About from "./components/About/About"
+import AboutMe from "./sections/ContactMe/ContactMe";
+import ContactMe from "./sections/AboutMe/AboutMe";
+// import Footer from "./sections/Footer/Footer";
+import Header from "./sections/Header/Header";
+import Navbar from "./sections/Navbar/Navbar";
+import Projects from "./sections/Projects/Projects";
+import { useState, useEffect } from "react";
 
 function App() {
+  // windowDimension will be used in most sections to facilitate responsive design
+  const [windowDimension, setWindowDimension] = useState(null);
+
+  useEffect(() => {
+    setWindowDimension(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimension(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
+
     <div className="App">
-      <>
-        <CssBaseline />
-        <Route exact path="/" component={Home} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contacts" component={Contacts} />
-        <Route path="/about" component={About} />
-        {/* <Home/> */}
-      </>
+      <Navbar windowDimension={windowDimension}/>
+      <Header windowDimension={windowDimension}/>
+      <AboutMe windowDimension={windowDimension}/>
+      <Projects windowDimension={windowDimension}/>
+      <ContactMe windowDimension={windowDimension}/>
+      {/* <Footer /> */}
     </div>
   );
 }

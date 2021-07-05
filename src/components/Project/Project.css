@@ -1,0 +1,105 @@
+/* ================ PROJECT GLOBAL STYLES ============================== */
+
+.project-card {
+  background-color: white;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.project-image-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image {
+  width: 40vw;
+  padding: 10px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+} 
+
+.project-image:hover {
+  opacity: 0.5;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.link-button {
+  border: 1px solid var(--portfolio-gray);
+  font-weight: 800;
+  padding: 8px 15px;
+  transition-property: background-color, color;
+  transition-duration: 0.75s;
+}
+
+.link-button:hover {
+  background-color: var(--portfolio-gray);
+  color: white;
+}
+
+/* ================ PROJECT DESKTOP STYLES ============================== */
+@media(min-width: 1190px) {
+  .project-card {
+    flex-direction: column;
+    width: 550px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-image {
+    width: 90%;
+    max-height: 450px;
+  }
+  .project-description {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1590px) {
+  .project-card {
+    flex-direction: row;
+    width: 740px;
+    padding-bottom: 10px;
+    margin: 10px;
+  }
+
+  .project-image {
+    width: 300px;
+  }
+  .link-button {
+    font-size: .85em;
+  }
+}
+
+/* ================ PROJECT TABLET STYLES ============================== */
+@media(max-width: 800px) {
+  .link-button {
+    font-size: .85em;
+    padding: 4px 8px;
+  }
+}
+
+/* ================ PROJECT MOBILE STYLES ============================== */
+@media (max-width: 640px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 80vw;
+  }
+}

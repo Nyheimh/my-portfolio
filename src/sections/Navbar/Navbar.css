@@ -1,0 +1,135 @@
+/* ================= GLOBAL NAV STYLES ====================================== */
+nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, .85);
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+
+/* ================= DESKTOP NAV STYLES ====================================== */
+
+.nav-header {
+  font-size: 5vw;
+  flex-grow: 1;
+}
+
+.desktop-console {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 30px 0px 30px;
+  margin: 0px 10px;
+}
+
+@media (min-width: 641px) {
+  .nav-link {
+    font-family: 'Sanchez', serif;
+    color: var(--portfolio-gray);
+    font-size: 2.5vw;
+    transition-property: transform;
+    transition-duration: 0.1s;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.25);
+  }
+}
+
+
+
+/* =============== Breakpoints for very large screen sizes ================= */
+@media (min-width: 1500px) {
+  nav {
+    height: 150px;
+  }
+}
+
+@media (min-width: 2200px) {
+  nav {
+    height: 200px;
+  }
+}
+
+/* ================= MOBILE NAV STYLES ====================================== */
+@media (max-width: 640px) {
+  nav {
+    height: 80px;
+    justify-content: space-between;
+  }
+
+  .nav-header {
+    font-size: 2em;
+    flex-grow: 0;
+  }
+  
+  .nav-link {
+    font-family: 'Sanchez', serif;
+  }
+
+
+}
+
+.hamburger-image {
+  flex-grow: 0;
+}
+
+.hamburger-dropdown {
+  position: fixed;
+  top: 0;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  left: 0;
+  z-index: 3;
+  padding-top: 10px;
+  width: 100%;
+  background-color: white;
+  font-size: 1.5em;
+  grid-template-areas: 
+    "X X H H H"
+    "N N A A A"
+    "N N P P P"
+    "N N C C C"
+}
+
+@keyframes slide-in {
+  from {
+    top: -135px
+  }
+  to {
+    top: -80
+  }
+}
+
+.hamburger-close, .nav-link {
+  cursor: pointer;
+}
+
+.hamburger-close {
+  margin: 0px;
+  text-align: center;
+  grid-area: X;
+  font-size: .9em;
+}
+
+.home-link {
+  grid-area: H;
+}
+
+.about-link {
+  grid-area: A;
+}
+
+.projects-link {
+  grid-area: P;
+}
+
+.contact-link {
+  grid-area: C;
+}

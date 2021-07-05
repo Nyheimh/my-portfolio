@@ -6,3 +6,89 @@ body {
 
 
 
+/* =============== GLOBAL APP STYLES ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Sanchez&display=swap');
+
+:root {
+  --portfolio-gray: #555664;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.App {
+  text-align: left;
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  color: var(--portfolio-gray);
+  width: 100%;
+}
+
+section {
+  margin: 20px;
+  animation: fade-in 5s;
+}
+
+h1, h2 {
+  font-family: 'Sanchez', serif;
+}
+
+/* Styling to avoid linked sections being flush with top of the screen */
+h2 span {
+  margin-top: -15%;
+  padding-bottom: 15%;
+  display: block;
+}
+
+/* =============== BUTTONS & LINKS ========================================= */
+a:hover, button:hover, input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: var(--portfolio-gray);
+}
+
+button, input[type="submit"] {
+  background-color: white;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 800;
+  padding: 8px 15px;
+  border: 1px solid var(--portfolio-gray);
+  box-shadow: none;
+  transition-property: background-color, color;
+  transition-duration: 0.75s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: var(--portfolio-gray);
+  color: white;
+}
+
+/* No bulleting on lists */
+ul {
+  list-style-type: none;
+}
+
+/* =============== RESPONSIVE FONT SIZES ========================================= */
+@media (min-width: 1000px) {
+  .App {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 350px) {
+  .App {
+    font-size: 16px;
+  }
+}
