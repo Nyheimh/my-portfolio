@@ -37,6 +37,7 @@ export default function AboutMe({ windowDimension }) {
               <a
                 href="https://drive.google.com/file/d/1GlcaeC_vkJVOtvKLWzao41YzMEbtAqr5/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
               </a>
