@@ -1,8 +1,10 @@
 /* =============== GLOBAL APP STYLES ========================================= */
-
+/*
 :root {
-  /* --portfolio-gray: #ffff; */
+  /* --portfolio-gray: #ffff;
 }
+
+*/
 
 body {
   background: #000814;
@@ -10,14 +12,12 @@ body {
 
 .App {
   text-align: left;
-  /* font-family: 'Assistant', sans-serif; */
   font-size: 18px;
   color: var(--portfolio-gray);
   width: 100%;
 }
 
 section {
-  /* margin: 20px; */
   animation: fade-in 5s;
 }
 
