@@ -1,3 +1,5 @@
+/*
+
 import "./Navbar.css";
 import Hamburger from "../../components/Hamburger/Hamburger";
 import { sectionLinks } from "../../services/sectionLinks.js";
@@ -45,5 +47,33 @@ export default function Navbar({ windowDimension }) {
         </div>
       )}
     </nav>
+  );
+}
+
+*/
+
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "./Navbar.css";
+
+export default function NavBar() {
+  const [click, setClick] = useState(false);
+  const closeMobileMenu = () => setClick(false);
+
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            Nyheim Hunter
+          </Link>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <a href="https://www.linkedin.com/in/nyheimhunter/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 }

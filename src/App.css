@@ -5,8 +5,8 @@
 }
 
 body {
-  background:  rgba(211, 207, 207, 0.345)
-} 
+  background: #000814;
+}
 
 .App {
   text-align: left;
@@ -17,10 +17,9 @@ body {
 }
 
 section {
-  margin: 20px;
+  /* margin: 20px; */
   animation: fade-in 5s;
 }
-
 
 h2 span {
   margin-top: -15%;
@@ -29,11 +28,14 @@ h2 span {
 }
 
 /* =============== BUTTONS & LINKS ========================================= */
-a:hover, button:hover, input[type="submit"]:hover {
+a:hover,
+button:hover,
+input[type="submit"]:hover {
   cursor: pointer;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: var(--portfolio-gray);
 }
@@ -53,7 +55,8 @@ input[type="submit"] {
   transition-duration: 0.75s;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: black;
   color: white;
 }

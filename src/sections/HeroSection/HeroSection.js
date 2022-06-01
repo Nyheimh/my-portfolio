@@ -1,16 +1,22 @@
 import React from "react";
 import "../../App.css";
-// import { Button } from "../Button/Button";
 import "./HeroSection.css";
-// import clip from "../../videos/video-1.mp4"
+import nyheim from "../../assets/nyheim.png";
 
 function HeroSection() {
   return (
-    <div className="hero-container">
-      {/* <video src={clip} autoPlay loop muted /> */}
-      <h1>I'm Nyheim Hunter</h1>
-      <p>Welcome to my portfolio.</p>
-    </div>
+    <section className="hero-container">
+      <div className="hero-words">
+        <h3>
+          Hi there, My name is Nyheim &nbsp;
+          <br />
+          <h2 className="title">Software Engineer</h2>
+        </h3>
+      </div>
+      <div clasName="hero-image">
+        <img src={nyheim} alt="Nyheim Hunter" className="profile-pic" />
+      </div>
+    </section>
   );
 }
 

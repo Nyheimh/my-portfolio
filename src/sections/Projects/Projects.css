@@ -6,3 +6,11 @@
     justify-content: space-around;
   }
 }
+
+.projects {
+  background-color: #001d3d;
+  color: black;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+}

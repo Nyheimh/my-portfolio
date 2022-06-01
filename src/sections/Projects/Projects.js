@@ -3,7 +3,7 @@ import Project from "../../components/Project/Project";
 import { projectData } from "../../services/projectData.js";
 
 export default function Projects() {
-  const projectJSX = projectData.map((project, index) =>
+  const projectJSX = projectData.map((project, index) => (
     <Project
       key={index}
       image={project.image}
@@ -13,18 +13,23 @@ export default function Projects() {
       site={project.site}
       github={project.github}
     />
-  )
-  
+  ));
+
   return (
-    <section>
-      <h2>
-        <span id="projects"> &nbsp; </span>
-        Projects
-      </h2>
-      {/* <p>Examples of recent projects that I've worked on:</p> */}
+    <div className="projects">
+      <h5 className="title">Nyheim's Fun Time</h5>
       <div className="projects-div">
         {projectJSX}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/lCkOj08fEsY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-    </section>
-  )
+    </div>
+  );
 }
