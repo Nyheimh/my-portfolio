@@ -24,7 +24,16 @@ export default function Projects() {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/lCkOj08fEsY"
-          title="YouTube video player"
+          title="Unemployed to Software Engineer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/mT7bH1EBeZc"
+          title="How to Break Into Tech"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

@@ -3,12 +3,7 @@
 .about-section {
   background-color: #003566;
   color: white;
-  /* margin: 25px; */
 }
-
-/* .about {
-  margin: 1000px;
-} */
 
 .resume-button {
   align-self: center;
@@ -17,7 +12,6 @@
 .about-details {
   display: flex;
   flex-direction: row;
-  /* margin-left: 150px; */
 }
 
 .href-experience > a {

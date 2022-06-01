@@ -26,11 +26,11 @@ function App() {
   return (
     <div className="App">
       <Navbar windowDimension={windowDimension} />
-      <HeroSection windowDimension={windowDimension}/>
+      <HeroSection windowDimension={windowDimension} />
       <AboutMe windowDimension={windowDimension} />
       <Projects windowDimension={windowDimension} />
       {/* <ContactMe windowDimension={windowDimension}/> */}
-      {/* <Footer />. */}
+      {/* <Footer /> */}
     </div>
   );
 }
