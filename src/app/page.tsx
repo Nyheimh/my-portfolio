@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
 import Headers from "./components/Headers";
 import Card from "./components/Card";
 
@@ -32,31 +31,46 @@ type CatFacts = {
 };
 
 export default async function HomePage() {
+  const now = new Date();
+  const currentDateTime = now.toLocaleString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
+
   const weatherData = await getWeather();
   const catData = await getCatFacts();
+
   return (
     <main>
       <Headers />
-      <div className="h-790px mx-auto grid max-w-screen-lg grid-cols-1 items-center justify-center gap-8 px-4 py-8 md:grid-cols-2 ">
-        <div className="mb-8">
-          <h1 className="mb-4 text-2xl font-bold">
-            It's Monday, Mar 4 2024 at 11:50AM
-          </h1>
+      <div className=" mx-auto grid max-w-screen-lg grid-cols-1 items-center justify-center p-6  md:grid-cols-2">
+        <div className="mb-8 mt-20 h-64 w-96">
+          <h1 className=" p-6 text-5xl font-bold">It's {currentDateTime}</h1>
         </div>
-        {/* <div className="-m-2 flex flex-wrap"> */}
         <div className="w-full p-2">
           <Card label="About me">
-            I enjoy the outdoors and the beautiful weather in northern
-            california. I wanted to move to Texas, but my family lives here.
+            I enjoy outdoors 🧗🏽‍♀️, trying new food 🧆, traveling ⛰️, video games
+            👾, sports 🏈🏃🏾‍♂️, and new technology 🖥️. I enjoy visiting new places
+            and learning about different cultures.
           </Card>
         </div>
         <div className="w-1/2 p-2">
           <Card label="Sacramento, CA">
-            <p className="mb-4 text-2xl font-bold">
+            <p className="mb-4 text-4xl font-bold">
               {weatherData.current.temperature_2m}° F
             </p>
-            <p> Wind speed {weatherData.current.wind_speed_10m}</p>
-            <p>Humidity {weatherData.current.relative_humidity_2m}</p>
+            <p className="font-bold">
+              {" "}
+              Wind speed {weatherData.current.wind_speed_10m} km/h
+            </p>
+            <p className="font-bold">
+              Humidity {weatherData.current.relative_humidity_2m}%
+            </p>
           </Card>
         </div>
         <div className="w-1/2 p-2">
@@ -64,7 +78,6 @@ export default async function HomePage() {
             <p>{catData.data}</p>
           </Card>
         </div>
-        {/* </div> */}
       </div>
     </main>
   );
