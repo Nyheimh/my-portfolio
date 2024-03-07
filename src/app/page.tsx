@@ -45,14 +45,14 @@ const HomePage = () => {
     const fetchData = async () => {
       try {
         const weatherResponse = await fetch(
-          "https://api.open-meteo.com/v1/forecast?latitude=41.655300&longitude=-83.535721&current=temperature_2m,wind_speed_10m,relative_humidity_2m",
+          "https://api.open-meteo.com/v1/forecast?latitude=38.5816&longitude=-121.4944&current=temperature_2m,relative_humidity_2m,wind_speed_10m&temperature_unit=fahrenheit&timezone=America%2FLos_Angeles&forecast_days=1",
         );
 
         if (!weatherResponse.ok) {
           throw new Error("Failed to fetch weather data");
         }
 
-        const weatherData: WeatherData = await weatherResponse.json();
+        const weatherData = (await weatherResponse.json()) as WeatherData;
         setWeatherData(weatherData);
 
         const catFactsResponse = await fetch(
@@ -62,8 +62,8 @@ const HomePage = () => {
         if (!catFactsResponse.ok) {
           throw new Error("Failed to fetch cat facts data");
         }
-
-        const catFactsData: CatFacts = await catFactsResponse.json();
+        const catFactsData: CatFacts =
+          (await catFactsResponse.json()) as CatFacts;
         setCatData(catFactsData);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -73,31 +73,41 @@ const HomePage = () => {
     fetchData().catch((error) => console.error("Error in fetchData:", error));
   }, []);
 
-  if (!weatherData || !catData) return <div>Loading Responses...</div>;
+  if (!weatherData || !catData)
+    return (
+      <div className="flex  items-center justify-center">
+        Loading Nyheim's Portfolio...
+      </div>
+    );
 
   return (
     <main>
       <Headers />
-      <div className="flex h-screen items-center justify-center">
+      <div className="flex  items-center justify-center">
         <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-6 p-6 md:grid-cols-2 md:p-8 lg:gap-8">
-          <div className="h-64 w-full text-center text-5xl font-bold md:w-96">
+          <div className="h-64 w-full pt-8 text-center text-5xl font-bold md:w-96">
             <h1>It's {currentDateTime}</h1>
           </div>
           <div className=" w-full p-2 md:w-1/2">
-            <Card label="About me">
+            <Card
+              link="https://www.linkedin.com/in/nyheimhunter/"
+              label="About me"
+            >
               <p className="text-sm">
-                I enjoy outdoors 🧗🏽‍♀️, trying new food 🧆, traveling ⛰️, video
-                games 👾, and sports 🏈🏃🏾‍♂️. I enjoy visiting new places and
-                learning about different cultures.
+                I love nature 🌲, hiking 🧗🏽‍♀️, trying new food 🧆, traveling ⛰️,
+                tech 👾, and sports 🏈🏃🏾‍♂️. I have been passionate in tech since I
+                youth and ways tech innovates our lives.
               </p>
               <p className="pt-2 text-sm">
-                My top programming languages are Javascript, React, Next, Go,
-                and Nest.
+                My recent tech stack is Javascript, React, Next, Go, and Nest.
               </p>
             </Card>
           </div>
           <div className="w-full p-2 md:w-1/2">
-            <Card label="Sacramento, CA">
+            <Card
+              label="Sacramento, CA"
+              link="https://weather.com/weather/today/l/e2b1c9683cd1dff1137428099ae56c2cbbf604887768893f4b8e2f9c71b559f3c76611e48adc71442faeced8e8931285"
+            >
               <p className="mb-4 text-4xl font-bold">
                 {weatherData?.current?.temperature_2m ?? "N/A"}° F
               </p>
@@ -110,7 +120,10 @@ const HomePage = () => {
             </Card>
           </div>
           <div className="w-full p-2 md:w-1/2">
-            <Card label="Cat Fact">
+            <Card
+              label="Cat Fact"
+              link="https://github.com/wh-iterabb-it/meowfacts"
+            >
               <p className="text-sm">{catData?.data}</p>
             </Card>
           </div>
